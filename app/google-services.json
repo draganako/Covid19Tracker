@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "716877669487",
+    "firebase_url": "https://covid19tracker-cbf40-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "covid19tracker-cbf40",
+    "storage_bucket": "covid19tracker-cbf40.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716877669487:android:bd84c39152498f14be999a",
+        "android_client_info": {
+          "package_name": "com.example.covid19tracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716877669487-rjih7nf9vlj27e27vieq8ghpiev8g04g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCR8WbDiRfF71lC7G54ajx17ySFfSQG8yQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "716877669487-rjih7nf9vlj27e27vieq8ghpiev8g04g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

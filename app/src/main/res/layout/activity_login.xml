@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="64dp"
+        android:text="Prijavite se"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        />
+    <ImageView
+        android:id="@+id/imageViewLoginCovid"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        tools:layout_editor_absoluteX="155dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvLogin"
+        />
+
+    <EditText
+        android:id="@+id/editTextLoginEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/imageViewLoginCovid"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:hint="email"/>
+
+    <EditText
+        android:id="@+id/editLoginTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/editTextLoginEmailAddress"
+        android:layout_centerHorizontal="true"
+        android:hint="lozinka"
+        />
+
+    <Button
+        android:id="@+id/buttonLoginLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Potvrdi"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/editLoginTextPersonName"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewLoginOrSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/or_signup"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/buttonLoginLog"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

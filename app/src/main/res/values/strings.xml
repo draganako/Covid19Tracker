@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Covid19Tracker</string>
+    <string name="title_profile">Profil</string>
+    <string name="title_home">Početna strana</string>
+    <string name="title_notifications">Obaveštenja</string>
+    <string name="title_symptoms">Simptomi</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="or_signup"><u>Ili se učlanite</u></string>
+    <string name="or_login"><u>Ili se prijavite</u></string>
+
+    <string name="symptoms">Simptomi</string>
+    <string name="symptoms_light_title">Lakši simptomi bolesti:</string>
+    <string name="symptoms_heavy_title">Teži simptomi bolesti:</string>
+    <string name="symptoms_list_light">
+    Groznica\nKašalj\nOtežano disanje\nNesvestica\nBolovi u mišićima ili telu\nGlavobolja\nOslabljeno čulo ukusa ili mirisa\nUpaljeno grlo\nZapušen nos\nMučnina ili povraćanje\nDijareja
+    </string>
+    <string name="symptoms_list_heavy">
+    Jako otežano disanje\nKonstantan bol ili pritisak u grudima\nNemogućnost buđenja ili ostajanja budnim\nBleda, siva ili plavkasta koža, usne ili nokti
+    </string>
+
+    <string name="loggedUser_email">loggedUseremail</string>
+    <string name="loggedUser_username">loggedUserUsername</string>
+    <string name="loggedUser_image">loggedUserImage</string>
+    <string name="loggedUser_index">loggedUserIndex</string>
+
+    <string name="logout">Odjavi se</string>
+    <string name="loggedUser_sick">loggedUserSick</string>
+
+    <string name="loggedUser_position_lg">loggedUserLongitude</string>
+    <string name="loggedUser_position_lt">loggedUserLatitude</string>
+    <string name="loggedUser_Radius">loggedUserRadius</string>
+
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout tools:context=".EditProfileActivity"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/editProfileRelLay"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/Theme.Covid19Tracker"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="@color/design_default_color_on_primary"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/edit_profile_toolbar"
+        app:title="Izmeni profil">
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/images_profile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="80dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageViewEditActProfPic"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_baseline_account_box_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewEditPicture"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="end|bottom"
+            android:src="@drawable/ic_baseline_edit_24"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewEditActProfPic"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <EditText
+            android:id="@+id/editProfileTextPersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="26dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="105dp"
+            android:layout_toRightOf="@+id/images_profile"
+            android:ems="10"
+            android:hint="ime"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editProfileSurname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="26dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="165dp"
+            android:layout_toRightOf="@+id/images_profile"
+            android:ems="10"
+            android:hint="prezime"
+            android:inputType="textPersonName" />
+
+        <fragment
+            android:id="@+id/fragmenteditProfileContacts"
+            android:name="com.example.covid19tracker.Fragments.ContactsEditFragment"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_below="@+id/editProfileSurname"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="30dp"></fragment>
+
+        <fragment
+            android:id="@+id/fragmenteditProfileIllnesses"
+            android:name="com.example.covid19tracker.Fragments.IllnessDatesEditFragment"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginHorizontal="12dp"
+            android:layout_below="@+id/fragmenteditProfileContacts"
+            android:layout_marginTop="30dp">
+
+        </fragment>
+
+
+</RelativeLayout>
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/buttonDoneEdit"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Potvrdi"
+    />
+</FrameLayout>

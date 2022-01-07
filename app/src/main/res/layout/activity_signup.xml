@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+    <TextView
+        android:id="@+id/tvSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="42dp"
+        android:text="Učlanite se"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewLoginCovid"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="32dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        tools:layout_editor_absoluteX="155dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvSignup"
+        />
+
+
+    <EditText
+        android:id="@+id/editSignupTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/imageViewLoginCovid"
+        android:layout_centerHorizontal="true"
+        android:hint="ime"
+        />
+
+    <EditText
+        android:id="@+id/editSignupSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/editSignupTextPersonName"
+        android:layout_centerHorizontal="true"
+        android:hint="prezime"
+        />
+
+    <EditText
+        android:id="@+id/editSignupTextPersonUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/editSignupSurname"
+        android:layout_centerHorizontal="true"
+        android:hint="korisničko ime"
+        />
+
+    <EditText
+        android:id="@+id/editTextSignupEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/editSignupTextPersonUsername"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:hint="email"/>
+
+    <EditText
+        android:id="@+id/editSignupPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/editTextSignupEmailAddress"
+        android:layout_centerHorizontal="true"
+        android:hint="lozinka"
+        />
+
+    <Button
+        android:id="@+id/buttonSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Potvrdi"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/editSignupPassword"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewSignupOrLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/or_login"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/buttonSignup"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

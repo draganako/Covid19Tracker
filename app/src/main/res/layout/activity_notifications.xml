@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationsActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/Theme.Covid19Tracker"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="@color/design_default_color_on_primary"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/notifications_toolbar"
+        app:title="Obaveštenja">
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        >
+        <fragment
+            android:id="@+id/fragmentNotifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.example.covid19tracker.Fragments.NotificationsFragment"
+            >
+
+        </fragment>
+    </RelativeLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        android:layout_gravity="bottom|end"
+        app:menu="@menu/navigation_menu"
+        android:layout_alignParentBottom="true"
+        />
+</FrameLayout>

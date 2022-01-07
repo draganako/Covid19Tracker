@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/Theme.Covid19Tracker"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="@color/design_default_color_on_primary"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/profile_toolbar"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profil"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                style="@style/Theme.Covid19Tracker"
+                android:layout_centerVertical="true"
+                >
+
+            </TextView>
+        <ImageButton
+            android:id="@+id/imageButtonEditProfile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/colorPrimary"
+            android:clickable="true"
+            android:src="@drawable/ic_baseline_edit_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"/>
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profileFrameLayout">
+    <ImageView
+        android:id="@+id/imageViewProfilePicture"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        tools:src="@drawable/ic_baseline_account_box_24" />
+
+
+    <TextView
+        android:id="@+id/textViewProfileUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:text="Username"
+        android:layout_below="@id/imageViewProfilePicture"
+        />
+        <ImageView
+            android:id="@+id/ProfileuserHealthStatus"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="6dp"
+            android:layout_below="@id/imageViewProfilePicture"
+            android:layout_toRightOf="@+id/textViewProfileUsername"
+            android:src="@drawable/ic_baseline_healthy_24">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/textViewProfileNameAndSurname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:layout_below="@id/textViewProfileUsername"
+            />
+
+    <fragment
+        android:id="@+id/profileViewPagerContainer"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.example.covid19tracker.Fragments.ViewPagerContainerFragment"
+        android:layout_below="@+id/textViewProfileNameAndSurname"
+        android:tag="userProfile"
+        >
+    </fragment>
+</RelativeLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        android:layout_gravity="bottom|end"
+        app:menu="@menu/navigation_menu"
+        android:layout_alignParentBottom="true"
+        />
+</FrameLayout>
